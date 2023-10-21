@@ -27,7 +27,7 @@ function App() {
 
       ]
     },{
-      path : 'detail',
+      path : 'detail/:id',
       element : <ProductDetail />
     }
     
