@@ -11,6 +11,7 @@ import {
 import Products from './components/Products';
 import Layout from './Layout';
 import ProductDetail from './components/ProductDetail';
+import Wishlist from './components/Wishlist';
 
 function App() {
   
@@ -29,6 +30,10 @@ function App() {
     },{
       path : 'detail/:id',
       element : <ProductDetail />
+    },
+    {
+      path : 'wishlist',
+      element : <Wishlist/>
     }
     
   ]);

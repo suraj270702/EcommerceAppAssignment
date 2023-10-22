@@ -3,6 +3,7 @@ import Filter from './components/Filter'
 import Search from './components/Search'
 import Products from './components/Products'
 import Pagination from './components/Pagination'
+import { Link } from 'react-router-dom'
 
 const Layout = () => {
   const [searchQuery,setSearchQuery] = useState('')
@@ -23,7 +24,7 @@ const Layout = () => {
             </div>
 
             <div>
-              <button className='px-4 py-4 bg-indigo-100 hover:bg-indigo-300 border rounded-lg'><span className='text-[40px] leading-4 font-bold'>❤️</span></button>
+              <Link to="/wishlist" className='px-4 py-4 bg-indigo-100 hover:bg-indigo-300 border rounded-lg'><span className='text-[40px] leading-4 font-bold'>❤️</span></Link>
             </div>
           
         </div>
